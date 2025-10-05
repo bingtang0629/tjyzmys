@@ -1,0 +1,22 @@
+<article class="{{ if .image.exists }}has-image{{ end }}">
+    <a href=".link">
+        
+        {{ if .image.exists }}
+            <div class="article-image">
+                <img src="{{ .image.link }}" 
+                        {{ if .image.hasSize }}
+                            width="{{ .image.width }}" 
+                            height="{{ .image.height }}"
+                        {{ end }} 
+                        loading="lazy"
+                        alt="Featured image of {{ .text }}">
+            </div>
+        {{ end }}
+
+        <div class="article-details">
+            <h2 class="article-title">
+                {{- .text -}}
+            </h2>
+        </div>
+    </a>
+</article>
