@@ -3,7 +3,7 @@
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
     {{ $pag := .Paginate ($filtered) }}
-    
+    <h2 class="section-title">网站板块</h2>
     <div class="subsection-list">
         <div class="article-list--tile">
             {{ range slice "/post/" "/gallery/" "/articles/" }}
@@ -13,6 +13,7 @@
         </div>
     </div>
 
+    <h2 class="section-title">最新页面</h2>
     <section class="article-list">
         {{ range $index, $element := $pag.Pages }}
             {{ partial "article-list/default" . }}

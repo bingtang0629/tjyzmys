@@ -77,7 +77,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "twikoo"
+provider = "waline"
 
 [comments.disqusjs]
 shortname = ""
@@ -105,8 +105,8 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = ""
-lang = ""
+serverURL = "https://myscomment.netlify.app/.netlify/functions/comment"
+lang = "zh-cn"
 visitor = ""
 avatar = ""
 emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
@@ -117,7 +117,7 @@ placeholder = ""
 admin = "Admin"
 
 [comments.twikoo]
-envId = "http://45.136.14.117/"
+envId = "https://yzmycomment.netlify.app/.netlify/functions/twikoo"
 region = ""
 path = ""
 lang = "zh-cn"
