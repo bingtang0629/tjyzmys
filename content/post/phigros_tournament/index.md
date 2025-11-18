@@ -1,5 +1,6 @@
 ---
 title: 音游大赛公告
+date: 2025-11-07 18:00:00+0800   
 draft: false
 comment: true
 ---

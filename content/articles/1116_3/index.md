@@ -1,7 +1,7 @@
 ---      
 title: 致《轻音少女》 其二     
 image: 1116_3.jpg      
-date: 2025-11-0716 18:00:00+0800      
+date: 2025-11-16 18:00:00+0800      
 draft: false      
 comment: true      
 ---      
